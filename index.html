@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Asacoco Keyboard</title>
+<script>
+function myFunction(){
+  var inputText = $("#target").val();
+  var mapObj = {
+   a:":_aaa:",
+   b:":_bbb:",
+   c:":_ccc:",
+   d:":_ddd:",
+   e:":_eee:",
+	};
+var modifiedText = inputText.replace(/a|b|c|d|e/ig, function(matched){
+  return mapObj[matched.toLowerCase()];
+});
+  //var modifiedText = (inputText.replace(/a/ig, ':aaa:'));
+  
+	//var chars = {'a':':aaa:','b':':bbb:','c':':ccc:'};
+	//modifiedText = inputText.replace(/[abc]/ig, m => chars[m]);
+  //var myTextarea = document.getElementsByName('#container')[0];
+  $('#container').val(modifiedText);
+}
+</script>
+</head>
+<body>
+
+<textarea id="target" onkeyup="myFunction()">
+</textarea>
+<br />
+<textarea id="container">
+</textarea>
+
+
+</body>
+</html>
