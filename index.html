@@ -2,6 +2,30 @@
 <html>
 <head>
 <title>Asacoco Keyboard</title>
+<style>
+  .main {
+    margin: auto;
+    width: 50em;
+    border: 3px solid green;
+    padding: 10px;
+  }
+  textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45rem;
+    height: 5rem;
+    font-size: 2em;
+  }
+  #display{
+    margin: auto;
+    width: 45em;
+    height: 2rem;
+    border: 3px solid green;
+    padding: 10px;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 function myFunction(){
   var inputText = $("#target").val();
@@ -11,9 +35,19 @@ function myFunction(){
    c:":_ccc:",
    d:":_ddd:",
    e:":_eee:",
+  };
+  var emoteObj = {
+   a:'<img src="img/a.png" align="top" alt="_aaa:">',
+   b:'<img src="img/b.png" align="top" alt="_bbb:">',
+   c:'<img src="img/c.png" align="top" alt="_ccc:">',
+   d:'<img src="img/d.png" align="top" alt="_ddd:">',
+   e:'<img src="img/e.png" align="top" alt="_eee:">',
 	};
 var modifiedText = inputText.replace(/a|b|c|d|e/ig, function(matched){
   return mapObj[matched.toLowerCase()];
+});
+var emoteDisplay = inputText.replace(/a|b|c|d|e/ig, function(matched){
+  return emoteObj[matched.toLowerCase()];
 });
   //var modifiedText = (inputText.replace(/a/ig, ':aaa:'));
   
@@ -21,17 +55,24 @@ var modifiedText = inputText.replace(/a|b|c|d|e/ig, function(matched){
 	//modifiedText = inputText.replace(/[abc]/ig, m => chars[m]);
   //var myTextarea = document.getElementsByName('#container')[0];
   $('#container').val(modifiedText);
+  $('#display').html(emoteDisplay);
 }
 </script>
 </head>
 <body>
-
-<textarea id="target" onkeyup="myFunction()">
-</textarea>
-<br />
-<textarea id="container">
-</textarea>
-
+<div class = "main">
+  <h1>Insert Text Here</h1>
+  <textarea id="target" onkeyup="myFunction()">
+  </textarea>
+  <br />
+  <br />
+  <textarea id="container">
+  </textarea>
+  <br />
+  <br />
+  <div id = "display">
+  </div>
+</div>
 
 </body>
 </html>
