@@ -39,6 +39,9 @@
     font-size: 1.9em;
     overflow: auto;
   }
+  .copytextarea{
+    font-size: 1.2em;
+  }
   #cocofukireta{
     
     height: 64px;
@@ -133,13 +136,13 @@ function myFunction(){
     y:'<img src="img/y.png" align="top" alt=":_yyy:">',
     z:'<img src="img/z.png" align="top" alt=":_zzz:">'
 	};
-var modifiedText = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z/ig, function(matched){
+var modifiedText = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
   return mapObj[matched.toLowerCase()];
 });
-var discordText = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z/ig, function(matched){
+var discordText = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
   return discordObj[matched.toLowerCase()];
 });
-var emoteDisplay = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z/ig, function(matched){
+var emoteDisplay = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
   return emoteObj[matched.toLowerCase()];
 });
   //var modifiedText = (inputText.replace(/a/ig, ':aaa:'));
@@ -152,23 +155,22 @@ var emoteDisplay = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|q|r|s|t|u|v|
   $('#display').html(emoteDisplay);
 }
 </script>
+<link rel="icon" href="favicon.ico" type="image/ico" sizes="128x128">
 </head>
 <body>
 <div class = "main">
-  <h1>Asacoco Keyboard</h1>
+  <h1><img src="img/asacocoboard_logo.png" width="64px" style="vertical-align:middle"> &nbsp;Asacoco Keyboard</h1>
   <br />
   <div id = "display">
   </div>
   <br />
-  <h2>Insert Text Here</h2>
+  <h2>Insert Text Here 👇</h2>
   <textarea id="target" onkeyup="myFunction()"></textarea>
-  <br />
   <h2>Use in Coco's chat</h2>
-  <textarea id="cocochat"></textarea>
-  <br />
+  <textarea id="cocochat" class="copytextarea"></textarea>
   <h2>Use in Discord</h2>
   <p>For use in the Kiryu-Kai Tatsunoko Gang server or outside of it with Discord Nitro.</p>
-  <textarea id="discord"></textarea>
+  <textarea id="discord" class="copytextarea"></textarea>
 </div>
 <p id="footer">Code and design by <a href="https://twitter.com/Madekuji_san" target="_blank">Madekuji-san (Masao T)</a>.<br>Powered by intense Stack Overflow digging and 100% pure Asacoco.<br>
   You may also like <a href="https://docs.google.com/spreadsheets/d/14lVgxBllz1b8DHFGP_tKIvJXBr59lz3yNFpdZ2SOJCc/copy" target="_blank">HoloCalcu</a>, an interactive spreadsheet to help you budget Hololive memberships and Super Chats.</p>
