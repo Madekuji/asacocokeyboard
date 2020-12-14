@@ -2,6 +2,14 @@
 <html>
 <head>
 <title>Asacoco Keyboard</title>
+<!--
+HTML, CSS, JS mostly written by @Madekuji_san.
+Here's another thing that's built from the art of the bodge.
+Also, if you haven't yet, sub to Coco. Now.
+See you all on the return stream!
+I'm too lazy to optimize for mobile right now.s
+Switching from px to em/rem somehow makes this part less of a disaster, lmao.
+-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
@@ -178,10 +186,10 @@ var emoteDisplay = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/
   <h2>Insert Text Here 👇</h2>
   <textarea id="target" onkeyup="myFunction()"></textarea>
   <h2>Use in Coco's chat &nbsp;<button type="button" id="chatButton">Copy</button></h2> 
-  <textarea id="cocochat" class="copytextarea"></textarea>
+  <textarea id="cocochat" class="copytextarea" readonly></textarea>
   <h2>Use in Discord &nbsp;<button type="button" id="discordButton">Copy</button></h2>
   <p>For use in the Kiryu-Kai Tatsunoko Gang server or outside of it with Discord Nitro.</p>
-  <textarea id="discord" class="copytextarea"></textarea>
+  <textarea id="discord" class="copytextarea" readonly></textarea>
 </div>
 <p id="center">Code and design by <a href="https://twitter.com/Madekuji_san" target="_blank">Madekuji-san (Masao T)</a>.<br>Powered by intense Stack Overflow digging and 100% pure Asacoco.<br>
   Code is available on <a href="https://github.com/Madekuji/AsacocoKeyboard">Github.</a><br>
