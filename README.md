@@ -15,3 +15,5 @@ Madekuji-san!#1337 on Discord
 
 ## One last note...
 ![b](img/b.png)![i](img/i.png)![g](img/g.png)&emsp;![k](img/k.png)![u](img/u.png)![s](img/s.png)![a](img/a.png)&emsp;![kusa](img/kusaw.png)
+
+![Kondragon!](img/coco.gif)
