@@ -65,8 +65,7 @@ Switching from px to em/rem somehow makes this part less of a disaster, lmao.
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 function myFunction(){
-  var insertTextArea = document.getElementById('target');
-  var inputText = insertTextArea.value;
+  var inputText = document.getElementById('target').value;
   var cocoChatObj = {
     a:":_aaa:",
     b:":_bbb:",
@@ -165,9 +164,9 @@ var emoteDisplay = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/
 	//var chars = {'a':':aaa:','b':':bbb:','c':':ccc:'};
 	//modifiedText = inputText.replace(/[abc]/ig, m => chars[m]);
   //var myTextarea = document.getElementsByName('#container')[0];
-  $('#cocochat').val(modifiedText);
-  $('#discord').val(discordText);
-  $('#display').html(emoteDisplay);
+  document.getElementById('cocochat').value = modifiedText;
+  document.getElementById('discord').value = discordText;
+  document.getElementById('display').innerHTML = emoteDisplay;
 
   document.querySelector("#chatButton").onclick = function(){
     document.querySelector("#cocochat").select();
