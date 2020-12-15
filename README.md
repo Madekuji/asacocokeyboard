@@ -14,4 +14,4 @@ I don't know how YouTube AI works. If for some reason YouTube AI shadowbans you 
 Madekuji-san!#1337 on Discord
 
 ## One last note...
-![b](img/b.png)![i](img/i.png)![g](img/g.png)&emsp;![k](img/k.png)![u](img/u.png)![s](img/s.png)![a](img/a.png)
+![b](img/b.png)![i](img/i.png)![g](img/g.png)&emsp;![k](img/k.png)![u](img/u.png)![s](img/s.png)![a](img/a.png)&emsp;![kusa](img/kusaw.png)
