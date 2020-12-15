@@ -65,8 +65,9 @@ Switching from px to em/rem somehow makes this part less of a disaster, lmao.
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 function myFunction(){
-  var inputText = $("#target").val();
-  var mapObj = {
+  var insertTextArea = document.getElementById('target');
+  var inputText = insertTextArea.value;
+  var cocoChatObj = {
     a:":_aaa:",
     b:":_bbb:",
     c:":_ccc:",
@@ -151,7 +152,7 @@ function myFunction(){
     z:'<img src="img/z.png" align="top" alt=":_zzz:">'
 	};
 var modifiedText = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
-  return mapObj[matched.toLowerCase()];
+  return cocoChatObj[matched.toLowerCase()];
 });
 var discordText = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
   return discordObj[matched.toLowerCase()];
