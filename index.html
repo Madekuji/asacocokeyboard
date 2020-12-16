@@ -104,23 +104,23 @@ function myFunction(){
     g:":letterggg:",
     h:":letterhhh:",
     i:":letteriii:",
-    j:":letterjjj:",
+    j:"🇯",
     k:":letterkkk:",
     l:":letterlll:",
     m:":lettermmm:",
     n:":letternnn:",
     o:":letterooo:",
     p:":letterppp:",
-    q:":letterqqq:",
+    q:"🇶",
     r:":letterrrr:",
     s:":lettersss:",
     t:":letterttt:",
     u:":letteruuu:",
-    v:":lettervvv:",
+    v:"🇻",
     w:":letterwww:",
-    x:":letterxxx:",
+    x:"🇽",
     y:":letteryyy:",
-    z:":letterzzz:"
+    z:"🇿"
   };
   var emoteObj = {
     a:'<img src="img/a.png" align="top" alt=":_aaa:">',
@@ -153,7 +153,7 @@ function myFunction(){
 var modifiedText = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
   return cocoChatObj[matched.toLowerCase()];
 });
-var discordText = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
+var discordText = inputText.replace(/a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z/ig, function(matched){
   return discordObj[matched.toLowerCase()];
 });
 var emoteDisplay = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
