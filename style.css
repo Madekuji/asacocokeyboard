@@ -1,4 +1,4 @@
-.main {
+.main{
     margin: auto;
     width: 50em;
     border: 3px solid orange;
@@ -8,13 +8,13 @@
 h1{
     text-align:center;
 }
-p {
+p{
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-#center {
+#center{
     text-align:center;
 }
-textarea {
+textarea{
     display: block;
     margin-left: auto;
     margin-right: auto;
