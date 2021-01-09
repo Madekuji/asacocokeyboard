@@ -17,16 +17,16 @@ function myFunction(){
       n:":_nnn:",
       o:":_ooo:",
       p:":_ppp:",
-      q:":_qqq:",
+      q:"Q",
       r:":_rrr:",
       s:":_sss:",
       t:":_ttt:",
       u:":_uuu:",
-      v:":_vvv:",
+      v:"V",
       w:":_wowow:",
-      x:":_xxx:",
+      x:"X",
       y:":_yyy:",
-      z:":_zzz:"
+      z:"Z"
     };
     var discordObj = {
       a:":letteraaa:",
@@ -38,7 +38,7 @@ function myFunction(){
       g:":letterggg:",
       h:":letterhhh:",
       i:":letteriii:",
-      j:"🇯",
+      j:":letterjjj:",
       k:":letterkkk:",
       l:":letterlll:",
       m:":lettermmm:",
@@ -84,13 +84,13 @@ function myFunction(){
         y:'<img src="img/y.png" align="top" alt=":_yyy:">',
         z:'<img src="img/z.png" align="top" alt=":_zzz:">'
       };
-  var modifiedText = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
+  var modifiedText = inputText.replace(/a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
     return cocoChatObj[matched.toLowerCase()];
   });
   var discordText = inputText.replace(/a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z/ig, function(matched){
     return discordObj[matched.toLowerCase()];
   });
-  var emoteDisplay = inputText.replace(/a|b|c|d|e|f|g|h|i|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
+  var emoteDisplay = inputText.replace(/a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|r|s|t|u|w|y/ig, function(matched){
     return emoteObj[matched.toLowerCase()];
   });
     //var modifiedText = (inputText.replace(/a/ig, ':aaa:'));
